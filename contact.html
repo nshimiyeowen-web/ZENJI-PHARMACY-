@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Zenji Pharmacy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <img src="images/logo.jpg" alt="Zenji Pharmacy logo" class="logo">
+  <h1>CONTACT ZENJI</h1>
+  <p class="tagline">SAVE TIME TO SAVE A LIFE</p>
+  <nav>
+    <a href="index1.html">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="contact.html">CONTACT US</a>
+    <a href="register.php">REGISTER</a>
+    <a href="login.php">LOGIN</a>
+  </nav>
+</header>
+<main>
+  <div class="grid">
+    <div class="card">
+      <h2>Reach us</h2>
+      <p><b>Email:</b> zenji256@gmail.com<br><b>Phone:</b> +256 7758968<br><b>Location:</b> Kampala, Uganda<br><b>Hours:</b> Mon–Sat, 8am–9pm</p>
+      <img src="images/pharmacy.png" alt="Zenji Pharmacy" style="width:100%;border-radius:10px">
+    </div>
+    <form class="box validate" action="contact_submit.php" method="post" novalidate>
+      <h2>Send us a message</h2>
+      <label for="name">Full name</label><input id="name" name="name" data-rule="required min:3">
+      <label for="email">Email</label><input id="email" name="email" type="email" data-rule="required email">
+      <label for="phone">Phone (optional)</label><input id="phone" name="phone" data-rule="phone">
+      <label for="subject">Subject</label><input id="subject" name="subject" data-rule="required">
+      <label for="message">Message</label><textarea id="message" name="message" rows="5" data-rule="required min:10"></textarea>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+  </div>
+</main>
+<footer><p><b>Email: zenji256@gmail.com | Tel: +256 7758968</b></p><p>&copy; 2026 Zenji Pharmacy</p></footer>
+<script src="js/validate.js"></script>
+</body>
+</html>
